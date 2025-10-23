@@ -13,3 +13,11 @@ jobs:
     steps:
       - name: Exibir mensagem no log
         run: echo " Github Action funcionando com sucesso!"
+  
+  criar-arquivo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Criar arquivo de texto
+        run: echo "Este é um arquivo criado pelo Github Actions." > arquivo.txt
+      - name: Exibir conteúdo do arquivo
+        run: cat arquivo.txt
