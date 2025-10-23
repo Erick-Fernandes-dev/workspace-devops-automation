@@ -11,3 +11,8 @@ jobs:
         run: echo "Hello World!"
       - name: Print goodbye
         run: echo "Done - bye"
+      - name: Multiple commands
+        run: |
+          echo "First command"
+          echo "Second command"
+          echo "Third command"
